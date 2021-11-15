@@ -39,5 +39,18 @@ class Reproductor extends Multimedia{
 //musica, pelicula y serie que se llaman desde el DOM
 
 const musica=document.querySelector('#musica')
-const pelicula=document.querySelector('#pelicula')
-const serie=document.querySelector('#serie')
+const peliculas=document.querySelector('#peliculas')
+const series=document.querySelector('#series')
+
+//instancias para probar e insertar videos
+
+const m1 = new Reproductor("https://www.youtube.com/embed/5qap5aO4i9A", musica)
+m1.playMultimedia()
+m1.setInicio()
+const p1 = new Reproductor("https://www.youtube.com/embed/_a1BtZmqIRg", peliculas)
+p1.playMultimedia()
+p1.setInicio()
+const s1 = new Reproductor("https://www.youtube.com/embed/Z4TuS0HEJP8", series)
+s1.playMultimedia()
+s1.setInicio()
+
